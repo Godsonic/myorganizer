@@ -26,7 +26,12 @@
 		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 		
 		<!-- page css files -->
+		<link href="assets/css/climacons-font.css" rel="stylesheet">
 		<link href="assets/plugins/jquery-ui/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+		<link href="assets/plugins/fullcalendar/css/fullcalendar.css" rel="stylesheet">
+		<link href="assets/plugins/morris/css/morris.css" rel="stylesheet">
+		<link href="assets/plugins/jvectormap/css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+		<link href="assets/plugins/daterangepicker/css/daterangepicker-bs3.css" rel="stylesheet">
 
 	    <!-- Custom styles for this template -->
 	    <link href="assets/css/style.min.css" rel="stylesheet" id="main-style">
@@ -53,67 +58,12 @@
 		6. 'static-header'		  - Static Header
 	-->
 	
-	<body >
-		
-				<!-- start: Layout Settings / remove this div from your project -->
-		<div id="theme-settings" class="hidden-sm hidden-xs">
-			<div id="open-close">
-				<i class="fa fa-wrench"></i>
-			</div>	
-			<h4>Options</h4>
-			<ul id="options">
-				<li>
-					<label class="custom-checkbox-item pull-left">
-						<input id="sm" class="custom-checkbox" type="checkbox"/>
-						<span class="custom-checkbox-mark"></span>
-					</label>
-					<span class="desc">Sidebar Minified</span> 
-				</li>
-				<li>
-					<label class="custom-checkbox-item pull-left">
-						<input id="sh" class="custom-checkbox" type="checkbox"/>
-						<span class="custom-checkbox-mark"></span>
-					</label>
-					<span class="desc">Sidebar Hidden</span> 
-				</li>
-				<li>
-					<label class="custom-checkbox-item pull-left">
-						<input id="rtl" class="custom-checkbox" type="checkbox"/>
-						<span class="custom-checkbox-mark"></span>
-					</label>
-					<span class="desc">Right to Left</span> 
-				</li>
-				<li>
-					<label class="custom-checkbox-item pull-left">
-						<input id="bl" class="custom-checkbox" type="checkbox"/>
-						<span class="custom-checkbox-mark"></span>
-					</label>
-					<span class="desc">Boxed Layout</span> 
-				</li>
-				<li>
-					<label class="custom-checkbox-item pull-left">
-						<input id="ss" class="custom-checkbox" type="checkbox"/>
-						<span class="custom-checkbox-mark"></span>
-					</label>
-					<span class="desc">Static Sidebar</span> 
-				</li>
-				<li>
-					<label class="custom-checkbox-item pull-left">
-						<input id="she" class="custom-checkbox" type="checkbox"/>
-						<span class="custom-checkbox-mark"></span>
-					</label>
-					<span class="desc">Static Header</span> 
-				</li>
-
-			</ul>
-				
-		</div>	
-		<!-- end: Layout Settings -->
+	<body class="sidebar-minified">
 		
 		<!-- start: Header -->
 		<div class="navbar" role="navigation">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="2nd-level.html#"><i class="icon-rocket"></i> <span>Real Admin</span></a>
+				<a class="navbar-brand" href="2nd-level.html#"><i class="icon-rocket"></i> <span>myOrganizer</span></a>
 			</div>
 			<ul class="nav navbar-nav navbar-actions navbar-left">
 				<li class="visible-md visible-lg"><a href="2nd-level.html#" id="main-menu-toggle"><i class="fa fa-bars"></i></a></li>
@@ -124,7 +74,7 @@
 				<input type="text" class="form-control" placeholder="Are you looking for something ?">
 			</form>
 	        <ul class="nav navbar-nav navbar-right visible-md visible-lg">
-				<li><button class="btn btn-default">Preview</button></li>
+				<li><button class="btn btn-default">Help</button></li>
 				<li><button class="btn btn-success">Launch</button></li>
 				<li><span class="timer"><i class="icon-clock"></i> <span id="clock"><!-- JavaScript clock will be displayed here, if you want to remove clock delete parent <li> --></span></span></li>
 				<li class="dropdown visible-md visible-lg">
