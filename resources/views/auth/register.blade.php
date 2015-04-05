@@ -1,10 +1,10 @@
-@extends('app')
+@extends('master')
 
 @section('content')
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
+			<div class="panel panel-primary">
 				<div class="panel-heading">Register</div>
 				<div class="panel-body">
 					@if (count($errors) > 0)
@@ -22,11 +22,28 @@
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 						<div class="form-group">
-							<label class="col-md-4 control-label">Name</label>
+							<label class="col-md-4 control-label">First Name</label>
 							<div class="col-md-6">
-								<input type="text" class="form-control" name="name" value="{{ old('name') }}">
+								<input type="text" class="form-control" name="firstname" value="{{ old('name') }}">
 							</div>
 						</div>
+                        
+                        <div class="form-group">
+							<label class="col-md-4 control-label">Last Name</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" name="lastname" value="{{ old('name') }}">
+							</div>
+						</div>
+                        
+                        <div class="form-group">
+                        <label class="col-md-4 control-label">Select Gender</label>
+                        <div class="col-md-6">
+                        <select class="form-control">
+                            <option>Male</option>
+                            <option>Female</option>   
+                        </select>
+                        </div>
+                        </div>
 
 						<div class="form-group">
 							<label class="col-md-4 control-label">E-Mail Address</label>
