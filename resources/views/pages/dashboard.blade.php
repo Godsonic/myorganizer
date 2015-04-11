@@ -4,7 +4,7 @@
 <!-- start: Content -->
 					
 			<ol class="breadcrumb">
-			  	<li><a href="widgets.html#">myOrganizer</a></li>
+			  	<li><a href="/">myOrganizer</a></li>
 			  	<li class="active">Dashboard</li>
 			</ol>		
 			
