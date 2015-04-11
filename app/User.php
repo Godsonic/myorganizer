@@ -30,5 +30,13 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 * @var array
 	 */
 	protected $hidden = ['password', 'remember_token'];
+    
+    // set user and user_type model relationship
+    
+    public function user_type()
+    {
+        return $this->belongsTo('App\UserType');
+    }
+    
 
 }
