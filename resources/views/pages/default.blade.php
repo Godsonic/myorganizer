@@ -13,7 +13,7 @@
 		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/ico/apple-touch-icon-57-precomposed.png">
 		<link rel="shortcut icon" href="assets/ico/favicon.png">
 
-	    <title>myOrganizer - Dashboard</title>
+	    <title>Real Admin - Bootstrap Admin Template</title>
 
 	    <!-- Bootstrap core CSS -->
 	    <link href="assets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-style">
